@@ -20,20 +20,20 @@ class MainActivity : AppCompatActivity() {
 
         btn_post.setOnClickListener {
 
-            val intent_set = Intent(applicationContext,PostActivity::class.java)
-            startActivity(intent_set)
+            val intent_post = Intent(applicationContext,PostActivity::class.java)
+            startActivity(intent_post)
         }
 
         btn_bird.setOnClickListener {
 
-            val intent_set = Intent(applicationContext,BluebirdActivity::class.java)
-            startActivity(intent_set)
+            val intent_bird = Intent(applicationContext,BlueBirdActivity::class.java)
+            startActivity(intent_bird)
         }
 
-        btn_setting.setOnClickListener {
+        btn_writeletter.setOnClickListener {
 
-            val intent_set = Intent(applicationContext,SettingActivity::class.java)
-            startActivity(intent_set)
+            val intent_writeletter = Intent(applicationContext,SettingActivity::class.java)
+            startActivity(intent_writeletter)
         }
     }
 }
