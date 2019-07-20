@@ -4,9 +4,13 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <Button
-            android:id="@+id/btn_home"
-            android:text="home"
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPostFragment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"
+
+    >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
 </LinearLayout>

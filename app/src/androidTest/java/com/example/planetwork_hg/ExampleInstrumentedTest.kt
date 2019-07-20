@@ -1,4 +1,4 @@
-package com.example.planetwork
+package com.example.planetwork_hg
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.example.planetwork", appContext.packageName)
+        assertEquals("com.example.planetwork_hg", appContext.packageName)
     }
 }
