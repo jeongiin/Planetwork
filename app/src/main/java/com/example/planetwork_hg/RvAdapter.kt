@@ -1,18 +1,19 @@
 package com.example.planetwork_hg
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import java.net.BindException
+import kotlinx.android.synthetic.main.item_letter.view.*
 
-class RvAdapter(val context: Context, val letterList, ArrayList<Letter>) :
+class RvAdapter(val context: Context, val letterList :ArrayList<Letter>) :
 RecyclerView.Adapter<RvAdapter.Holder>() {
 
-    inner class Holder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
+    inner class Holder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val letterPhoto = itemView?.findViewById<ImageView>(R.id.imgLetterType)
         val letterType = itemView?.findViewById<TextView>(R.id.tvLetterType)
         val letterTime = itemView?.findViewById<TextView>(R.id.tvLetterTime)
@@ -33,7 +34,7 @@ RecyclerView.Adapter<RvAdapter.Holder>() {
     }
 
     // 화면을 최초 로딩하여 만들어진 View가 없는 경우, xml파일을 inflate하여 ViewHolder를 생성
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): Holder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_letter, parent, false)
         return Holder(view)
     }
@@ -42,7 +43,8 @@ RecyclerView.Adapter<RvAdapter.Holder>() {
         return letterList.size
     }
     // 위의 onCreateViewHolder에서 만든 view와 실제 입력되는 각각의 데이터를 연결
-    override fun onBindViewHolder(holder: Holder?, position: Int) {
+    override fun onBindViewHolder(holder: Holder, position: Int) {
         holder?.bind(letterList[position], context)
+        Log.e("리사이클러뷰 불러짐","성공")
     }
 }

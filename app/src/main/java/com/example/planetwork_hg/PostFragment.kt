@@ -1,23 +1,35 @@
 package com.example.planetwork_hg
 
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
+import androidx.recyclerview.widget.RecyclerView
+
+
 
 class PostFragment : Fragment() {
     // 쪽지 리스트
-    var letterList = arrayListOf<Letter>()
+    val letterList : ArrayList<Letter> = ArrayList()
+    lateinit var recyclerView : RecyclerView
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        var rootView = inflater.inflate(R.layout.fragment_post, container, false) as ViewGroup
+        letterList.add(Letter("사진","타입","시간","희지"))
 
-        val mAdapter = RvAdapter(this, letterList)
-        recyclerView.adapter = mAdapter
+        recyclerView = rootView.findViewById(R.id.rvPost) as RecyclerView
 
-        val lm = LinearLayoutManager(this)
-        recyclerView.layoutManager = lm
-        recyclerView.setHasFixedSize(true)      //바뀔 수 있는 크기를 고정해줌.
+        recyclerView.setHasFixedSize(true)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        recyclerView.adapter = RvAdapter(requireContext(),letterList)
+
+        return rootView
+    }
+
+
 
 }

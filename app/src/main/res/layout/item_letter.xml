@@ -28,8 +28,8 @@
             android:layout_marginLeft="16dp"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/ImgLetterType"
-            app:layout_constraintTop_toTopOf="@+id/ImgLetterType"
+            app:layout_constraintStart_toEndOf="@+id/imgLetterType"
+            app:layout_constraintTop_toTopOf="@+id/imgLetterType"
             tools:text="lettertype"/>
 
     <TextView
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/ImgLetterType"
+            app:layout_constraintBottom_toBottomOf="@+id/imgLetterType"
             app:layout_constraintStart_toStartOf="@+id/tvLetterType"
             tools:text="time" />
 
