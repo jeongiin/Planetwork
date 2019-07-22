@@ -1,4 +1,4 @@
-package com.example.jiplanetwork
+package com.example.PlaNetwork
 
 import kotlinx.android.synthetic.main.fragment_bluebird.*
 import android.os.Bundle

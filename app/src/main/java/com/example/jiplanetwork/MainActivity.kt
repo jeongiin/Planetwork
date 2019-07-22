@@ -1,4 +1,4 @@
-package com.example.jiplanetwork
+package com.example.PlaNetwork
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.example.jiplanetwork
+package com.example.PlaNetwork
 
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment

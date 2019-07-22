@@ -1,4 +1,4 @@
-package com.example.jiplanetwork
+package com.example.PlaNetwork
 
 import android.os.Bundle
 import android.view.LayoutInflater
