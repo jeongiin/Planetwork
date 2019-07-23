@@ -19,6 +19,6 @@ class PlanetFragment : Fragment() {
         //뷰 설정
         tvFragmentPla.text = "Planet Fragment"
 
-    }
+}
 
 }
