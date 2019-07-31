@@ -6,6 +6,7 @@ import retrofit2.http.Body
 
 //회원가입을 위한 data class 작성
 data class Register(
+
     var pk:Int?=null, //회원정보를 불러오기 위한 primary key값.
     var email:String?=null,
     var username:String?=null,
@@ -30,6 +31,7 @@ interface ClientService {
     @FormUrlEncoded
     @POST("/user/register/")
     //BaseUrl 뒤에 들어가는 register 기능 페이지
+
     fun RegisterRequest(@Field("email")email: String,
                         @Field("username")username: String,
                         @Field("password1")password1: String,

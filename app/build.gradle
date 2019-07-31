@@ -32,12 +32,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation 'com.google.code.gson:gson:2.8.5' //통신을 위해 추가
-    implementation 'com.squareup.retrofit2:retrofit:2.3.0' //통신을 위해 추가
-    implementation 'com.squareup.retrofit2:converter-gson:2.3.0' //통신을 위해 추가
+    //implementation 'com.google.code.gson:gson:2.8.5' //통신을 위해 추가
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0' //통신을 위해 추가
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0' //통신을 위해 추가
     implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0' //통신을 위해 추가
     implementation 'androidx.cardview:cardview:1.0.0' //통신을 위해 추가
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'com.google.android.material:material:1.0.0'
+    //개발 편의를 위한 Anko 라이브러리 추가
+    implementation "org.jetbrains.anko:anko:0.10.8"
 }
+

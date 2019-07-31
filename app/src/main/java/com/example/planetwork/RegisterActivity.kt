@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.planetwork.ClientService
+import com.example.planetwork.MainActivity
 import com.example.planetwork.R
 import com.example.planetwork.Register
 import kotlinx.android.synthetic.main.activity_register.*
@@ -41,31 +42,29 @@ class RegisterActivity : AppCompatActivity() {
                     genderChecked.text = "female"
             }
 
-            server.run {
-                RegisterRequest(
-                        emailText.text.toString(),
-                        username.text.toString(),
-                        password.text.toString(),
-                        repassword.text.toString(),
-                        nameText.text.toString(),
-                        nickname.text.toString(),
-                        genderChecked.text.toString(),
-                        birthday.text.toString()
-                    ).enqueue(object : Callback<Register> {
+            server.RegisterRequest(
+                emailText.text.toString(),
+                username.text.toString(),
+                password.text.toString(),
+                repassword.text.toString(),
+                nameText.text.toString(),
+                nickname.text.toString(),
+                genderChecked.text.toString(),
+                birthday.text.toString()
+            ).enqueue(object : Callback<Register> {
 
-                        //서버와 통신에 실패했을 때.
-                        override fun onFailure(call: Call<Register>, t: Throwable) {
-                        }
+                //서버와 통신에 실패했을 때.
+                override fun onFailure(call: Call<Register>, t: Throwable) {
+                }
 
-                        override fun onResponse(call: Call<Register>, response: Response<Register>) {
-                            println(response?.body().toString())
-                        }
-                    })
-            }
-            //val intent = Intent(this, RegisterActivity::class.java)
+                override fun onResponse(call: Call<Register>, response: Response<Register>) {
+                    println(response?.body().toString())
+                }
+            })
+
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
     }
-
 }
