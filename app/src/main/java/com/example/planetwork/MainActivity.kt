@@ -1,7 +1,8 @@
-package com.example.PlaNetwork
+package com.example.planetwork
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -15,14 +16,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //뷰 페이저 어뎁터 연결
-        vpMainActivity.adapter= MainActivity@adapter
+        //vpMainActivity.adapter= MainActivity@adapter
+        val fragmentAdapter = MainAdapter(supportFragmentManager)
+        vpMainActivity.adapter = fragmentAdapter
 
         vpMainActivity.addOnPageChangeListener(object: ViewPager.OnPageChangeListener {
 
             override fun onPageScrollStateChanged(state: Int) {
+                Log.e("히지페이지스테이트체인지","done")
             }
 
             override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
+                Log.e("히지페이지스크롤",position.toString())
             }
 
             override fun onPageSelected(position: Int) {
@@ -32,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                 tabLayout.getTabAt(2)?.setIcon(R.drawable.write_g)
                 tabLayout.getTabAt(3)?.setIcon(R.drawable.post2_g)
                 tabLayout.getTabAt(4)?.setIcon(R.drawable.set_g)
+                Log.e("히지Position",position.toString())
 
                 when(position) {
 
@@ -49,6 +55,8 @@ class MainActivity : AppCompatActivity() {
         })
         //탭 레이아웃에 뷰테이저 연결
         tabLayout.setupWithViewPager(vpMainActivity)
+
+
 
         tabLayout.getTabAt(0)?.setIcon(R.drawable.planet_w)
         tabLayout.getTabAt(1)?.setIcon(R.drawable.blue_bird_g)

@@ -1,4 +1,4 @@
-package com.example.jiplanetwork
+package com.example.planetwork
 
 import org.junit.Test
 
