@@ -37,7 +37,6 @@ class MainActivity : AppCompatActivity() {
                 tabLayout.getTabAt(2)?.setIcon(R.drawable.write_g)
                 tabLayout.getTabAt(3)?.setIcon(R.drawable.post2_g)
                 tabLayout.getTabAt(4)?.setIcon(R.drawable.set_g)
-                Log.e("히지Position",position.toString())
 
                 when(position) {
 

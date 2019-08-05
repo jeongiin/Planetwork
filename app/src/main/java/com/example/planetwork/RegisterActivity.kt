@@ -3,6 +3,7 @@ package com.likelion.planetwork
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.planetwork.ClientService
 import com.example.planetwork.MainActivity
 import com.example.planetwork.R
@@ -31,7 +32,7 @@ class RegisterActivity : AppCompatActivity() {
         //만들었던 인터페이스 기능 create
         var server = retrofit.create(ClientService::class.java)
 
-        //regiter 하기위해 값을 모두 입력하고 제출 버튼을 누를 때
+        //register 하기위해 값을 모두 입력하고 제출 버튼을 누를 때
         Submit.setOnClickListener {
 
             //라디오버튼으로 성별 체크
@@ -53,13 +54,14 @@ class RegisterActivity : AppCompatActivity() {
                 birthday.text.toString()
             ).enqueue(object : Callback<Register> {
 
-                //서버와 통신에 실패했을 때.
-                override fun onFailure(call: Call<Register>, t: Throwable) {
-                }
-
                 override fun onResponse(call: Call<Register>, response: Response<Register>) {
                     println(response?.body().toString())
                 }
+                //서버와 통신에 실패했을 때.
+                override fun onFailure(call: Call<Register>, t: Throwable) {
+                    Log.d("실패",""+call)
+                }
+
             })
 
             val intent = Intent(this, MainActivity::class.java)

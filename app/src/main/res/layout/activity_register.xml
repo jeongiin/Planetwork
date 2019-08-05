@@ -16,6 +16,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.425"/>
+
     <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
@@ -46,6 +47,7 @@
                 android:ems="10"
                 android:id="@+id/emailText"
                 android:hint="Input email"/>
+
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -53,6 +55,7 @@
                 android:ems="10"
                 android:id="@+id/username"
                 android:hint="Input id"/>
+
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,6 +63,7 @@
                 android:ems="10"
                 android:id="@+id/password"
                 android:hint="Input password"/>
+
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -67,6 +71,7 @@
                 android:ems="10"
                 android:id="@+id/repassword"
                 android:hint="One more input password"/>
+
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,11 +79,13 @@
                 android:ems="10"
                 android:id="@+id/nameText"
                 android:hint="Input name"/>
+
         <TextView
                 android:text="Gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="24sp"/>
+
         <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -90,6 +97,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/Male"
                     android:layout_weight="1"/>
+
             <RadioButton
                     android:text="Female"
                     android:layout_width="wrap_content"
@@ -97,11 +105,13 @@
                     android:id="@+id/Female"
                     android:layout_weight="1"/>
         </RadioGroup>
+
         <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/genderChecked"
                 android:textSize="0dp"/>
+
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

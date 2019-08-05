@@ -9,7 +9,7 @@ class MainAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
 
     // private val fragmentTitleList = mutableListOf("WriteLetter","BlueBirdFragment","PlanetFragment","PostFragment","SettingFragment")
 
-    public override fun getItem(position: Int): Fragment? {
+    override fun getItem(position: Int): Fragment? {
 
         return when(position) {
 

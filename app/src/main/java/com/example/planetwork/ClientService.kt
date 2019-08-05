@@ -25,7 +25,7 @@ data class Body (
 data class LoginForm (
     var user: Body
 )
-
+//API를 관리해주는 인터페이스
 interface ClientService {
     //회원가입 서비스
     @FormUrlEncoded
@@ -42,14 +42,14 @@ interface ClientService {
                         @Field("birth_date")birth_date: String):Call<Register>
 
     //로그인 서비스
-    @FormUrlEncoded
-    @POST("/user/login/")
-    fun LoginRequest(@Field("username")username: String,
-                     @Field("password")password1: String):Call<LoginForm>
+    //@FormUrlEncoded
+    //@POST("/user/login/")
+    //fun LoginRequest(@Field("username")username: String,
+    //                @Field("password")password1: String):Call<LoginForm>
 
     //회원정보 받아오기
-    @GET("/user/<int:pk>")
-    fun UserInfo(@Path("pk")pk:Int):Call<Register>
+    //@GET("/user/<int:pk>")
+    //fun UserInfo(@Path("pk")pk:Int):Call<Register>
 
 }
 
