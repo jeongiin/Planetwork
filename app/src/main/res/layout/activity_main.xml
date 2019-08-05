@@ -3,7 +3,11 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
+<<<<<<< HEAD
+        android:layout_height="match_parent" >
+=======
         android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+>>>>>>> 2191689e695b9035fd9128615456bf5f0f3f55a1
 
     <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBar"

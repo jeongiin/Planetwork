@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+            android:text="회원가입"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Login"
+            android:textSize="36sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.425"/>
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/planet_reg"
+            android:id="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/Login"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"/>
+
+    <LinearLayout
+            android:id="@+id/layoutregister"
+            android:orientation="vertical"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/Login"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/emailText"
+                android:hint="Input email"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/username"
+                android:hint="Input id"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/password"
+                android:hint="Input password"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/repassword"
+                android:hint="One more input password"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/nameText"
+                android:hint="Input name"/>
+        <TextView
+                android:text="Gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"/>
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gender">
+
+            <RadioButton
+                    android:text="Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Male"
+                    android:layout_weight="1"/>
+            <RadioButton
+                    android:text="Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Female"
+                    android:layout_weight="1"/>
+        </RadioGroup>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/genderChecked"
+                android:textSize="0dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/nickname"
+                android:hint="Input nickname"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/birthday"
+                android:hint="Input day of birth like YYYY-MM-DD "/>
+
+    </LinearLayout>
+    <Button
+            android:text="Done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Submit"
+            app:layout_constraintTop_toBottomOf="@id/layoutregister"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

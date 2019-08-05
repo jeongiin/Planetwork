@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+=======
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> 2191689e695b9035fd9128615456bf5f0f3f55a1
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
@@ -18,4 +23,8 @@
             app:layout_constraintBottom_toTopOf="parent"/>
 
 
+<<<<<<< HEAD
+</androidx.constraintlayout.widget.ConstraintLayout>
+=======
 </LinearLayout>
+>>>>>>> 2191689e695b9035fd9128615456bf5f0f3f55a1

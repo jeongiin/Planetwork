@@ -2,20 +2,37 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.planetwork_hg">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
-            android:label="@string/app_name"
+            android:label="Planetwork"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.Design.NoActionBar">
+<<<<<<< HEAD
+
+
+        <activity android:name="com.likelion.planetwork.RegisterActivity">
+=======
         <activity android:name=".MainActivity">
+>>>>>>> 2191689e695b9035fd9128615456bf5f0f3f55a1
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+
+
+=======
+>>>>>>> 2191689e695b9035fd9128615456bf5f0f3f55a1
     </application>
 
 </manifest>
