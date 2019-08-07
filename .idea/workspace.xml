@@ -49,6 +49,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_read_letter.xml">
           <provider editor-type-id="android-designer2" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/planetwork/WriteLetterActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/planetwork/ClientService.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
               <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
@@ -62,6 +68,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
               <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="361">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#33#306#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,6 +82,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
               <caret line="8" column="38" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="38" />
+            <state relative-caret-position="190">
+              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+            <state relative-caret-position="304">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#32#343#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,6 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/planetwork/PlanetFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
             <state relative-caret-position="209">
               <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
             </state>
@@ -128,6 +148,8 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
               <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="290">
+              <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -199,8 +221,10 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/planetwork/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_writeletter.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/planetwork/MainActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/planetwork/PlanetFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/planetwork/WriteLetterActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/planetwork/WriteLetterFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/planetwork/RegisterActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/planetwork/WriteLetterActivity.kt" />
@@ -301,6 +325,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="device.picker.selection" value="ce021712c9052b3903" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../clone/Planetwork" />
     <property name="device.picker.selection" value="LGMV300S550de36f" />
     <property name="last_opened_file_path" value="D:/RetrofitWithKotlin-master/RetrofitWithKotlin-master" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
@@ -406,6 +432,8 @@
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.29411766" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.28987855" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.29411766" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -419,6 +447,8 @@
       <window_info anchor="bottom" id="Find" order="3" sideWeight="0.49959514" visible="true" weight="0.32740214" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50931174" side_tool="true" weight="0.22597864" />
+      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.49068826" visible="true" weight="0.22597864" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="6" sideWeight="0.49068826" visible="true" weight="0.22550336" />
       <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49878544" weight="0.34519574" />
@@ -603,6 +633,9 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/planetwork/RegisterActivity.kt">
+    <entry file="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.0.0/1deaac9c124b19a14ebaf64780e7087d561541bd/appcompat-1.0.0-sources.jar!/androidx/appcompat/app/AppCompatActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_writeletter.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="26" column="81" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
@@ -634,6 +667,26 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/planetwork/RegisterActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_writeletter.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/planetwork/PlanetFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_planet.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -657,6 +710,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/planetwork/PlanetFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding>
+            <element signature="e#32#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/planetwork/WriteLetterActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#33#306#0" expanded="true" />
+          </folding>
         <state relative-caret-position="209">
           <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
