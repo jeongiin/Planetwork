@@ -5,6 +5,13 @@ import android.os.Bundle
 import android.util.Log
 import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_planet.*
+import android.R.attr.fragment
+import android.R.attr.fragment
+
+
+
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +21,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //count 값 받기
+        val fragment = PlanetFragment() // Fragment 생성
+        var count = intent.getIntExtra("count",1)
+        val bundle = Bundle()
+        bundle . putInt("count",count)//Key, Value
+        fragment.arguments = bundle
+
 
         //뷰 페이저 어뎁터 연결
         //vpMainActivity.adapter= MainActivity@adapter

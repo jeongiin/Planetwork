@@ -10,21 +10,19 @@ import kotlinx.android.synthetic.main.fragment_planet.*
 
 class PlanetFragment : Fragment() {
 
-   //var count = 0
-
+    var count=0
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        //submit_letter.setOnClickListener {
-        //    count++
-        //}
+        val extra = this.arguments
+        if(extra != null) {
+            count = extra.getInt("count")
+        }
         return inflater.inflate(R.layout.fragment_planet, container, false)
     }
 
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        //뷰 설정
-        //var count = arguments.getInt("$count",count)  // 전달한 key 값
-        tvFragmentPla.text = "planet"
+        tvFragmentPla.text = "$count"
     }
 
 }

@@ -11,16 +11,17 @@ class WriteLetterActivity : AppCompatActivity() {
     var count=0
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_writeletter)
-        ​
-        submit_letter.setOnClickListener {
-            val intent = Intent(applicationContext,MainActivity::class.java)
-            count++
-            startActivity(intent)
-            finish()
-        }
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.activity_writeletter)
+            submit_letter.setOnClickListener {
+                count++
+                val intent = Intent(this, MainActivity::class.java)
+                intent.putExtra("count",count)
+                startActivity(intent)
+                finish()
+             }
 
     }
 
 }
+
