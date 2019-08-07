@@ -23,7 +23,9 @@ class PlanetFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         //뷰 설정
-        tvFragmentPla.text = "Planet"
+        //var count = arguments.getInt("$count",count)  // 전달한 key 값
+        tvFragmentPla.text = "planet"
     }
+
 }
 
