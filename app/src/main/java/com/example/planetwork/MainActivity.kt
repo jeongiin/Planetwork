@@ -99,6 +99,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun getMyUsername(): String{
+
         var name=intent.getStringExtra("username")
 
         // 저장된 count 값 불러오기 위한 선언 후 에디터로 초기화
@@ -110,16 +111,15 @@ class MainActivity : AppCompatActivity() {
         // 에디터로 초기화 후 name값 저장
         val editor = pref.edit()
 
-        Log.e("name","$name")
         Log.e("name_saved","$name_saved")
-        editor.putString("username",name_saved).apply()
+        Log.e("name","$name")
 
         // 보내기 해줬을 때 새롭게 editor 갱신
         if ( name != null ) {
+            editor.putString("username",name).apply()
             return  name
         }
         else {
-            Log.e("이름_Main","$name_saved")
             return name_saved.toString()
         }
     }
