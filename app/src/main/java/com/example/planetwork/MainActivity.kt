@@ -8,41 +8,30 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_planet.*
 import android.R.attr.fragment
 import android.R.attr.fragment
-
-
-
-
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 
 
 class MainActivity : AppCompatActivity() {
 
     private val adapter by lazy { MainAdapter(supportFragmentManager) }
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        //count 값 받기
-        val fragment = PlanetFragment() // Fragment 생성
-        var count = intent.getIntExtra("count",1)
-        val bundle = Bundle()
-        bundle . putInt("count",count)//Key, Value
-        fragment.arguments = bundle
-
 
         //뷰 페이저 어뎁터 연결
         //vpMainActivity.adapter= MainActivity@adapter
         val fragmentAdapter = MainAdapter(supportFragmentManager)
         vpMainActivity.adapter = fragmentAdapter
 
-        vpMainActivity.addOnPageChangeListener(object: ViewPager.OnPageChangeListener {
+        vpMainActivity.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
 
             override fun onPageScrollStateChanged(state: Int) {
-                Log.e("히지페이지스테이트체인지","done")
             }
 
             override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
-                Log.e("히지페이지스크롤",position.toString())
             }
 
             override fun onPageSelected(position: Int) {
@@ -53,15 +42,14 @@ class MainActivity : AppCompatActivity() {
                 tabLayout.getTabAt(3)?.setIcon(R.drawable.post2_g)
                 tabLayout.getTabAt(4)?.setIcon(R.drawable.set_g)
 
-                when(position) {
+                when (position) {
 
-                    0   ->    tabLayout.getTabAt(0)?.setIcon(R.drawable.planet_w)
-                    1   ->    tabLayout.getTabAt(1)?.setIcon(R.drawable.blue_bird_w)
-                    2   ->    tabLayout.getTabAt(2)?.setIcon(R.drawable.write_w)
-                    3   ->    tabLayout.getTabAt(3)?.setIcon(R.drawable.post2_w)
-                    4   ->    tabLayout.getTabAt(4)?.setIcon(R.drawable.set_w)
+                    0 -> tabLayout.getTabAt(0)?.setIcon(R.drawable.planet_w)
+                    1 -> tabLayout.getTabAt(1)?.setIcon(R.drawable.blue_bird_w)
+                    2 -> tabLayout.getTabAt(2)?.setIcon(R.drawable.write_w)
+                    3 -> tabLayout.getTabAt(3)?.setIcon(R.drawable.post2_w)
+                    4 -> tabLayout.getTabAt(4)?.setIcon(R.drawable.set_w)
                 }
-
 
 
             }
@@ -78,6 +66,13 @@ class MainActivity : AppCompatActivity() {
         tabLayout.getTabAt(3)?.setIcon(R.drawable.post_g)
         tabLayout.getTabAt(4)?.setIcon(R.drawable.set_g)
 
+
+    }
+
+
+    fun getMyCount():Int{
+        var count = intent.getIntExtra("count",0)
+        return count
     }
 
 

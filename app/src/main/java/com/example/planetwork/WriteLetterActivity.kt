@@ -8,9 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_writeletter.*
 import android.preference.PreferenceManager
 import android.R.id.edit
-
-
-
+import android.util.Log
 
 
 class WriteLetterActivity : AppCompatActivity() {
@@ -22,7 +20,7 @@ class WriteLetterActivity : AppCompatActivity() {
         val pref = this.getPreferences(0)
         //데이터 호출 데이터 없으면 0됨
         var count = pref.getInt("count",0)
-
+        Log.e("되냐","$count")
         //submit 버튼을 누르면 count 증가
             submit_letter.setOnClickListener {
                 count++
