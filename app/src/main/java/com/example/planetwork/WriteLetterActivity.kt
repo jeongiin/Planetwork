@@ -30,7 +30,7 @@ class WriteLetterActivity : AppCompatActivity() {
                 val intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("count",count)
                 startActivity(intent)
-                finish()
+                //finish()
              }
 
     }

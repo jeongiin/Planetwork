@@ -27,7 +27,7 @@ class WriteLetterFragment : Fragment() {
         mv_write.setOnClickListener {view ->
             val intent = Intent(context, WriteLetterActivity::class.java)
             startActivity (intent)
-            activity?.finish()
+            //activity?.finish()
         }
     }
 }
