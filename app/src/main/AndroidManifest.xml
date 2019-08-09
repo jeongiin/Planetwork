@@ -13,17 +13,25 @@
             android:theme="@style/Theme.Design.NoActionBar">
         <activity android:name=".ReadLetterActivity">
         </activity>
+
         <activity android:name="com.likelion.planetwork.RegisterActivity">
+        </activity>
+
+        <activity android:name=".SplashActivity"
+                  android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity android:name=".MainActivity">
         </activity>
+
         <activity android:name=".WriteLetterActivity">
         </activity>
+
     </application>
 
 </manifest>
