@@ -5,7 +5,7 @@
     <item>
         <bitmap
                 android:gravity="center"
-                android:src="@drawable/planet_reg"/>
+                android:src="@drawable/splash_planet"/>
     </item>
 
 </layer-list>
