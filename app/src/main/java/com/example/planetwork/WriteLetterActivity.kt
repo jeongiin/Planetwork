@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_writeletter.*
 import android.preference.PreferenceManager
 import android.R.id.edit
 import android.util.Log
+import com.likelion.planetwork.RegisterActivity
 
 
 class WriteLetterActivity : AppCompatActivity() {
@@ -29,6 +30,7 @@ class WriteLetterActivity : AppCompatActivity() {
                 editor.putInt("count", count).apply()
                 val intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("count",count)
+                Log.d("카운트_write","$count")
                 startActivity(intent)
                 //finish()
              }

@@ -30,8 +30,10 @@ class PlanetFragment : Fragment() {
         // count 값 받기
         val activity = getActivity() as MainActivity?
         val count = activity?.getMyCount()
+        val name =activity?.getMyUsername()
 
         Log.e("꽃","$count")
+        Log.e("이름","$name")
 
         if (count != null){
             if (count >= 0 && count < 10)
@@ -62,7 +64,7 @@ class PlanetFragment : Fragment() {
                 planet.setImageResource(R.drawable.planet_8)
         }
 
-
+        username2.text = "$name"+"님 행성에 오신 것을 환영합니다!"
         tvFragmentPla.text = "$count"
     }
 

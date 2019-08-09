@@ -98,5 +98,31 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun getMyUsername(): String{
+        var name=intent.getStringExtra("username")
+
+        // 저장된 count 값 불러오기 위한 선언 후 에디터로 초기화
+        val pref = this.getPreferences(0)
+
+        //데이터 호출 데이터 없으면 0됨
+        var name_saved = pref.getString("username",name)
+
+        // 에디터로 초기화 후 name값 저장
+        val editor = pref.edit()
+
+        Log.e("name","$name")
+        Log.e("name_saved","$name_saved")
+        editor.putString("username",name_saved).apply()
+
+        // 보내기 해줬을 때 새롭게 editor 갱신
+        if ( name != null ) {
+            return  name
+        }
+        else {
+            Log.e("이름_Main","$name_saved")
+            return name_saved.toString()
+        }
+    }
+
 
 }

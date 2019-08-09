@@ -3,6 +3,7 @@ package com.example.planetwork
 import retrofit2.Call
 import retrofit2.http.*
 import retrofit2.http.Body
+import java.io.File
 
 //회원가입을 위한 data class 작성
 data class Register(
@@ -42,14 +43,25 @@ interface ClientService {
                         @Field("birth_date")birth_date: String):Call<Register>
 
     //로그인 서비스
-    //@FormUrlEncoded
-    //@POST("/user/login/")
-    //fun LoginRequest(@Field("username")username: String,
-    //                @Field("password")password1: String):Call<LoginForm>
+    @FormUrlEncoded
+    @POST("/user/login/")
+    fun LoginRequest(@Field("username")username: String,
+                     @Field("password")password1: String):Call<Register>
 
     //회원정보 받아오기
-    //@GET("/user/<int:pk>")
-    //fun UserInfo(@Path("pk")pk:Int):Call<Register>
+    @GET("/user/<int:id>")
+    fun getUserRequest(
+        @Path("id") id : Int):Call<Register>
+
+
+    @FormUrlEncoded
+    @POST("/message/")
+    fun postMessage(@Field("problem_id")problem_id: String,
+                    @Field("member_id")member_id: String,
+                    @Field("member_name")member_name:    String,
+                    @Field("content")content: String,
+                    @Field("image")image: File,
+                    @Field("date")date: String)
 
 }
 

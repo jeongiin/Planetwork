@@ -32,6 +32,9 @@
         <activity android:name=".WriteLetterActivity">
         </activity>
 
+        <activity android:name=".LoginActivity">
+        </activity>
+
     </application>
 
 </manifest>
