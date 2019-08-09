@@ -11,6 +11,7 @@
             android:id="@+id/write_letter"
             android:layout_width="393dp"
             android:layout_height="542dp"
+            android:background="@null"
             app:srcCompat="@drawable/letter_frg"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="80dp"
