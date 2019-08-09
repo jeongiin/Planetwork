@@ -19,6 +19,15 @@ data class Register(
     var birth_date:String?=null
 )
 
+data class Message(
+    var id: Int,
+    var body:String,
+    var sender:String,
+    var recipient: String,
+    var sent_at: String,
+    var perent_msg: String
+)
+
 data class Body (
     var username: String?=null,
     var pk: Int?=null
@@ -56,12 +65,7 @@ interface ClientService {
 
     @FormUrlEncoded
     @POST("/message/")
-    fun postMessage(@Field("problem_id")problem_id: String,
-                    @Field("member_id")member_id: String,
-                    @Field("member_name")member_name:    String,
-                    @Field("content")content: String,
-                    @Field("image")image: File,
-                    @Field("date")date: String)
+    fun postMessage(@Field("Body")Body: String):Call<Message>
 
 }
 
