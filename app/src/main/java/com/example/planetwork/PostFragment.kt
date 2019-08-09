@@ -18,8 +18,8 @@ class PostFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         super.onCreate(savedInstanceState)
         var rootView = inflater.inflate(R.layout.fragment_post, container, false) as ViewGroup
-        letterList.add(Letter("","고민","시간"))
-        letterList.add(Letter("","답장","시간"))
+        letterList.add(Letter("someone_story","고민","시간"))
+        letterList.add(Letter("reply_story","답장","시간"))
 
         recyclerView = rootView.findViewById(R.id.rvPost) as RecyclerView
 
