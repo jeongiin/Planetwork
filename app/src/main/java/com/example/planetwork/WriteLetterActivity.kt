@@ -36,14 +36,18 @@ class WriteLetterActivity : AppCompatActivity() {
 
         //submit 버튼을 누르면 count 증가
             submit_letter.setOnClickListener {
-                count++
+
+                //보내기 눌렀을 때 메세지 보내짐
                 server.postMessage(etWriteLetter.text.toString())
+
                 // 에디터로 초기화 후 count값 저장
+                count++
                 val editor = pref.edit()
                 editor.putInt("count", count).apply()
                 val intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("count",count)
                 Log.d("카운트_write","$count")
+                Log.d("메세지_write",etWriteLetter.text.toString())
                 startActivity(intent)
                 //finish()
              }
