@@ -22,7 +22,10 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        tvGotoRegister.setText(Html.fromHtml(resources.getString(R.string.string_under)))
+        var content=SpannableString(tvGotoRegister.text.toString())
+        content.setSpan(UnderlineSpan(),0,content.length,0)
+        tvGotoRegister.setText(content)
+        //tvGotoRegister.setText(Html.fromHtml(resources.getString(R.string.string_under)))
 
         tvGotoRegister.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)

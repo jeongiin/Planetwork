@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">PlaNetwork_hg</string>
-    <string name="string_under">회원이 아니신가요?      <u>회원가입하기</u></string>
+    <string name="string_under">회원가입하기</string>
 </resources>
