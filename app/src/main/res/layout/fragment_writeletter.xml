@@ -34,7 +34,7 @@
     <ImageView
             android:layout_width="259dp"
             android:layout_height="148dp" app:srcCompat="@drawable/what_worry"
-            tools:layout_editor_absoluteY="67dp" android:id="@+id/imageView"
+            tools:layout_editor_absoluteY="102dp" android:id="@+id/imageView"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"/>
