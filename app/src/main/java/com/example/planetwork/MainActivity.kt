@@ -87,6 +87,7 @@ class MainActivity : AppCompatActivity() {
         Log.e("count","$count")
         Log.e("count_saved","$count_saved")
 
+        // 보내기 해줬을 때 새롭게 editor 갱신
         if ( count != 0 ) {
             editor.putInt("count", count).apply()
             return count
