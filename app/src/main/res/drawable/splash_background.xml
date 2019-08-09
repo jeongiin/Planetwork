@@ -4,8 +4,8 @@
             android:drawable="@color/colorLetterBackground"/>
     <item>
         <bitmap
-                android:gravity="center"
-                android:src="@drawable/planet_reg"/>
+                android:gravity="fill"
+                android:src="@drawable/planet_splash"/>
     </item>
 
 </layer-list>

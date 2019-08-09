@@ -11,12 +11,17 @@ import android.R.attr.fragment
 import android.content.Intent
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import org.jetbrains.anko.toast
+import android.R.string.cancel
+
+
 
 
 class MainActivity : AppCompatActivity() {
 
     private val adapter by lazy { MainAdapter(supportFragmentManager) }
 
+    private var backKeyPressedTime : Long = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,6 +73,21 @@ class MainActivity : AppCompatActivity() {
         tabLayout.getTabAt(4)?.setIcon(R.drawable.set_g)
 
 
+    }
+
+    override fun onBackPressed() {
+        if (System.currentTimeMillis() > backKeyPressedTime + 2000) {
+            backKeyPressedTime = System.currentTimeMillis()
+            toast("뒤로 버튼을 한번 더 누르면 깊은 잠에 들거에요")
+            return
+        }
+        if (System.currentTimeMillis() <= backKeyPressedTime + 2000) {
+            this@MainActivity.finish()
+        }
+
+
+
+        finish()
     }
 
     fun getMyCount():Int{
