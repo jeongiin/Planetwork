@@ -8,6 +8,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_planet.*
 import android.R.attr.fragment
 import android.R.attr.fragment
+import android.content.Intent
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 
@@ -69,10 +70,31 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
     fun getMyCount():Int{
+
+        // count를 intent로 받음 ( 단, 초기 값은 0 )
         var count = intent.getIntExtra("count",0)
-        return count
+
+        // 저장된 count 값 불러오기 위한 선언 후 에디터로 초기화
+        val pref = this.getPreferences(0)
+
+        //데이터 호출 데이터 없으면 0됨
+        var count_saved = pref.getInt("count",0)
+
+        // 에디터로 초기화 후 count값 저장
+        val editor = pref.edit()
+
+        Log.e("count","$count")
+        Log.e("count_saved","$count_saved")
+
+        if ( count != 0 ) {
+            editor.putInt("count", count).apply()
+            return count
+        }
+
+        else
+            return count_saved
+
     }
 
 
