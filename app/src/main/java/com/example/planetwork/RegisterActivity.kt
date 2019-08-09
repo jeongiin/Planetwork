@@ -24,7 +24,7 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://shrouded-thicket-52351.herokuapp.com/user/register/")
+            .baseUrl("https://shrouded-thicket-52351.herokuapp.com")
             //배포한 웹페이지의 BaseUrl
             .addConverterFactory(GsonConverterFactory.create())
             .build()
